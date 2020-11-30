@@ -1,0 +1,46 @@
+.services {
+  padding: 5rem 0;
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    width: 30rem;
+    height: 40rem;
+    margin: 0 2rem;
+    padding: 0 1rem;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    &:nth-child(1) {
+      background-image: url('../img/services1.jpg');
+    }
+    &:nth-child(2) {
+      background-image: url('../img/services2.jpg');
+    }
+    &:nth-child(3) {
+      background-image: url('../img/services3.jpg');
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      mix-blend-mode: hue;
+    }
+    &:hover::before {
+      background-color: transparent;
+    }
+  }
+  &__name, &__text {
+    color: white;
+  }
+}

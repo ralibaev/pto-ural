@@ -1,0 +1,29 @@
+header.page-header
+  .top-header
+    .container.top-header__container
+      .top-header__mail
+        a.top-header__mail-link(href="mailto:info@pto-ural.ru") info@pto-ural.ru
+      .top-header__socials-blocks
+        ul.top-header__socials-list
+          li.top-header__socials-item
+            a(href="#") Вконтакте
+          li.top-header__socials-item
+            a(href="#") Инстаграм
+          li.top-header__socials-item
+            a(href="https://wa.me/79373171329") Whatsapp
+      .top-header__callme-block
+        button.link--callme.top-header__callme-link Обратный звонок
+  .bottom-header
+    .container.bottom-header__container
+      .bottom-header__logo
+        a.bottom-header__logo-link(href="#")
+          img.bottom-header__logo-img(src="img/logo.svg")
+      .bottom-header__nav
+        nav.main-nav
+          ul.main-nav__list
+            each val in ['О компании', 'Услуги и цены', 'Исполнительная документация', 'ППР', 'СКК', 'Контакты']
+              li.main-nav__item
+                a.link--underline(href="#")= val
+      .bottom-header__phones-block
+        a.bottom-header__phone-link(href="tel:+79373171329") +7(937)317-13-29
+        a.bottom-header__phone-link(href="tel:+79373092525") +7(937)309-25-25

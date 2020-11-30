@@ -1,0 +1,30 @@
+.bottom-header {
+  height: 6rem;
+  background-color: $blue4;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__logo {
+    line-height: 0;
+  }
+  &__logo-img {
+    height: 50px;
+  }
+  &__nav {
+    width: 800px;
+  }
+  &__phones-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+  }
+  &__phone-link {
+    color: white;
+  }
+}

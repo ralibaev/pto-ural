@@ -1,0 +1,52 @@
+.top-header {
+  height: 6rem;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  &__mail-link {
+    color: $blue4;
+  }
+  &__socials-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__socials-item {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 .5rem;
+    a {
+      font-size: 0;
+      line-height: 0;
+      &::before {
+        content: '';
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 3rem;
+      }
+    }
+    &:nth-child(1) a::before {
+      background-image: url('../img/vk.svg');
+    }
+    &:nth-child(2) a::before {
+      background-image: url('../img/instagram.svg');
+    }
+    &:nth-child(3) a::before {
+      background-image: url('../img/whatsapp.svg');
+    }
+  }
+  &__callme-link {
+    width: 16ch;
+    height: 3rem;
+    color: white;
+    background-color: $blue4;
+    border-radius: 1.5rem;
+  }
+}
