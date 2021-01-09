@@ -1,0 +1,16 @@
+.page-footer {
+  background-color: black;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+  &__work-info {
+    display: flex;
+    flex-direction: column;
+    color: greenyellow;
+  }
+}

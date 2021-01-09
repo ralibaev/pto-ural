@@ -1,46 +1,69 @@
 .services {
   padding: 5rem 0;
-  &__list {
-    display: flex;
-    justify-content: center;
+  &__list, &__text-list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: $laptop-min) {flex-direction: row;}
+  }
   &__item {
     position: relative;
-    width: 30rem;
+    width: 100%;
+    max-width: 300px;
     height: 40rem;
-    margin: 0 2rem;
     padding: 0 1rem;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    &:nth-child(1) {
-      background-image: url('../img/services1.jpg');
-    }
-    &:nth-child(2) {
-      background-image: url('../img/services2.jpg');
-    }
-    &:nth-child(3) {
-      background-image: url('../img/services3.jpg');
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      mix-blend-mode: hue;
-    }
-    &:hover::before {
-      background-color: transparent;
-    }
+    box-shadow: 0 0 10px 5px $gray1;
+    filter: brightness(30%);
+    @media (min-width: $tablet-min) {margin: 0 2rem;}
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: $green;
+    //   mix-blend-mode: hue;
+    // }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: rgba(0, 0, 0, 1);
+    //   mix-blend-mode: hue;
+    //   z-index: 1000;
+    // }
+    // &:hover {
+    //   filter: brightness(100%);
+    //   .services__name, .services__text-item, .services__text {color: white;}
+    //   &::before {background-color: black;}
+    // }
   }
-  &__name, &__text {
+  &__name, &__text, &__text-list {
     color: white;
   }
+  // &__text-list {
+  // }
 }
+// body.webp .services__item {
+//   &:nth-child(1) {background-image: url('../img/services1.webp');}
+//   &:nth-child(2) {background-image: url('../img/services2.webp');}
+//   &:nth-child(3) {background-image: url('../img/services3.webp');}
+// }
+// body.no-webp .services__item {
+//   &:nth-child(1) {background-image: url('../img/services1.jpg');}
+//   &:nth-child(2) {background-image: url('../img/services2.jpg');}
+//   &:nth-child(3) {background-image: url('../img/services3.jpg');}
+// }

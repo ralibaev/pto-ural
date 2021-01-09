@@ -2,28 +2,55 @@ header.page-header
   .top-header
     .container.top-header__container
       .top-header__mail
-        a.top-header__mail-link(href="mailto:info@pto-ural.ru") info@pto-ural.ru
+        a.top-header__mail-link(href="mailto:info@pto-ural.ru")
+          svg.top-header__mail-svg(width="30" height="30")
+            use(xlink:href="img/sprite.svg#send")
+          span info@pto-ural.ru
+      .top-header__work-time
+        svg.top-header__work-svg(width="30" height="30")
+          use(xlink:href="img/sprite.svg#clock")
+        .top-header__work-info
+          span г.Уфа, ул.Пархоменко 156/1 офис 317,
+          span Понедельник - пятница С 9<sup>00</sup> до 18<sup>00</sup>
       .top-header__socials-blocks
         ul.top-header__socials-list
           li.top-header__socials-item
-            a(href="#") Вконтакте
+            a(href="#" target="_blank") Вконтакте
+              svg.top-header__social-icon(width="30" height="30")
+                use(xlink:href="img/sprite.svg#vk")
           li.top-header__socials-item
-            a(href="#") Инстаграм
+            a(href="#" target="_blank") Инстаграм
+              svg.top-header__social-icon(width="30" height="30")
+                use(xlink:href="img/sprite.svg#instagram")
           li.top-header__socials-item
-            a(href="https://wa.me/79373171329") Whatsapp
+            a(href="https://wa.me/79373171329?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20услугу" target="_blank") Whatsapp
+              svg.top-header__social-icon(width="30" height="30")
+                use(xlink:href="img/sprite.svg#whatsapp")
       .top-header__callme-block
         button.link--callme.top-header__callme-link Обратный звонок
   .bottom-header
     .container.bottom-header__container
       .bottom-header__logo
-        a.bottom-header__logo-link(href="#")
-          img.bottom-header__logo-img(src="img/logo.svg")
+        a.bottom-header__logo-link(href="/")
+          svg.svg-logo(version="1.1" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg" width="200" height="50")
+            defs
+              linearGradient(id="logo-gradient")
+                stop(offset="-100%" stop-color="#F0FB00")
+                stop(offset="0%" stop-color="#11AD00")
+                stop(offset="100%" stop-color="#F0FB00")
+            path.svg-logo__logo(d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#logo-gradient)")
+            text.svg-logo__name(x="450" y="120" font-size="100" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#logo-gradient)") ООО УРАЛ
       .bottom-header__nav
         nav.main-nav
-          ul.main-nav__list
-            each val in ['О компании', 'Услуги и цены', 'Исполнительная документация', 'ППР', 'СКК', 'Контакты']
-              li.main-nav__item
-                a.link--underline(href="#")= val
+          .main-nav__main-menu
+            ul.main-nav__list
+              each val in ['О компании', 'Исполнительная документация', 'Проект производства работ', 'Аутсорсинг ПТО/СКК', 'Контакты']
+                li.main-nav__item
+                  a.link--underline(href="#")= val
+        button.main-nav__toggle(type="button")
+          span Меню
       .bottom-header__phones-block
-        a.bottom-header__phone-link(href="tel:+79373171329") +7(937)317-13-29
-        a.bottom-header__phone-link(href="tel:+79373092525") +7(937)309-25-25
+        a.link--underline.bottom-header__phone-link(href="tel:+79373171329") +7(937)317-13-29
+        a.link--underline.bottom-header__phone-link(href="tel:+79373092525") +7(937)309-25-25
+        svg.bottom-header__phone-icon(width="30" height="30")
+          use.bottom-header__phone-use(xlink:href="img/sprite.svg#phone")

@@ -17,7 +17,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-a:hover, a:active, a:focus {outline: none;}
 .container {
 	width: calc(100% - 40px);
 	max-width: 1340px;
@@ -38,16 +37,28 @@ a:hover, a:active, a:focus {outline: none;}
 body, p, span, ol, ul {
 	font-family: 'TT Norms Pro';
 	font-weight: normal;
-	font-size: 1.4rem;
-	@media (min-width: $tablet-min) {font-size: 1.8rem;}
+	font-size: 1.6rem;
+	@media (min-width: $laptop-min) {font-size: 1.8rem;}
 }
 h1, h2 {
+	font-size: 2rem;
 	font-weight: bold;
+	@media (min-width: $tablet-min) {font-size: 2.4rem;}
+	@media (min-width: $laptop-min) {font-size: 3rem;}
+}
+h1 {
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 1.6rem;
+	@media (min-width: $tablet-min) {font-size: 2rem;}
+	@media (min-width: $laptop-min) {font-size: 2.4rem;}
+}
+@media (max-width: $tablet-max) {
+	a, button {outline: 0;}
 }
 a {
   text-decoration: none;
-  &:hover {opacity: 0.7;}
-  &:active {opacity: 0.5;}
 }
 .link {
   display: flex;
@@ -58,42 +69,70 @@ a {
   &:hover, &:active {opacity: 1;  color: black; background-color: white;}
   &--underline {
     display: inline-block;
-    &::after {
-      content: '';
-      display: block;
-      width: 0%;
-      height: 2px;
-      background-color: white;
-      transition: width .3s ease-in-out;
-    }
-    &:hover {
-			opacity: 1;
-      &::after { width: 100%; }
-    }
+		@media (min-width: $laptop-min) {
+			&::after {
+	      content: '';
+	      display: block;
+	      width: 0%;
+	      height: 2px;
+	      transition: width .3s ease-in-out;
+	    }
+	    &:hover::after {width: 100%;}
+		}
   }
 	&--callme {
-		border: 2px solid $blue4;
+		border: 2px solid $green;
 		cursor: pointer;
 		&:hover {
 			background-color: white;
-			color: $blue4;
+			color: $dark-green;
+			border-color: $dark-green;
 		}
 	}
 }
 .page-main section:nth-of-type(2n - 1) {
 	background-color: $gray;
 }
-@keyframes from-right {
-	0% { transform: translateX(100%); }
-	100% { transform: translateX(0); }
-}
-@keyframes from-left {
-	0% { transform: translateX(-100%); }
-	100% { transform: translateX(0); }
+.svg-logo {
+	width: 140px;
+	height: 3.5rem;
+	@media (min-width: $tablet-min) {width: 160px; height: 4rem;}
+	@media (min-width: $laptop-min) {width: 200px; height: 5rem;}
+	@media (max-width: 1199px) and (min-width: $laptop-min) {
+		width: 60px;
+	}
+	&__name {
+		display: block;
+		@media (max-width: 1199px) and (min-width: $laptop-min) {display: none;}
+	}
 }
 @keyframes from-top {
-	0% { transform: translateY(-2000px); }
-	70% { transform: translateY(30px); }
-	90% { transform: translateY(-10px); }
-	100% { transform: translateY(0); }
+	0% {transform: translateY(-2000px);}
+	70% {transform: translateY(30px);}
+	90% {transform: translateY(-10px);}
+	100% {transform: translateY(0);}
+}
+@keyframes from-right {
+	0% {transform: translateX(100%);}
+	70% {transform: translateX(-20px);}
+	90% {transform: translateX(10px);}
+	100% {transform: translateX(0);}
+}
+@keyframes from-right-reverse {
+	0% {transform: translateX(0);}
+	10% {transform: translateX(10px);}
+	30% {transform: translateX(-20px);}
+	100% {transform: translateX(100%);}
+}
+@keyframes wiggle {
+	1% {transform: translateX(3px) rotate(2deg);}
+	2% {transform: translateX(-3px) rotate(-2deg);}
+	3% {transform: translateX(3px) rotate(2deg);}
+	4% {transform: translateX(-3px) rotate(-2deg);}
+	5% {transform: translateX(2px) rotate(1deg);}
+	6% {transform: translateX(-2px) rotate(-1deg);}
+	7% {transform: translateX(2px) rotate(1deg);}
+	8% {transform: translateX(-2px) rotate(-1deg);}
+	9% {transform: translateX(1px) rotate(0);}
+	10% {transform: translateX(-1px) rotate(0);}
 }

@@ -1,0 +1,10 @@
+<svg class="svg-logo" version="1.1" width="220" height="220" xmlns="http://www.w3.org/2000/svg" fill="#11AD00">
+  <defs>
+    <linearGradient id="logo-gradient">
+      <stop offset="0%" stop-color="#11AD00"/>
+      <stop offset="100%" stop-color="#F0FB00"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" rx="40" ry="40" fill="#000000" />
+  <path class="svg-logo__logo" d="M210 20 L110 200 L10 20 L151 20 L110 93 L95 67 L107 46 L54 46 L110 146 L180 20 Z" fill="url(#logo-gradient)"/>
+</svg>

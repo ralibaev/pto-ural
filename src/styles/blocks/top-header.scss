@@ -1,13 +1,38 @@
 .top-header {
-  height: 6rem;
+  display: none;
+  background-color: $gray;
+  @media (min-width: $laptop-min) {display: block; height: 5rem;}
   &__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     height: 100%;
   }
-  &__mail-link {
-    color: $blue4;
+  &__mail, &__socials-blocks, &__callme-block, &__work-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__mail-link, &__work-time {
+    display: flex;
+    align-items: center;
+    span {padding-left: 0.5rem; color: $green;}
+  }
+  &__work-info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__mail-link:hover {
+    .top-header__mail-svg {fill: $dark-green;}
+    span {color: $dark-green;}
+  }
+  &__mail-svg, &__work-svg, &__social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $green;
+    // @media (min-width: $tablet-min) {width: 2.4rem; height: 2.4rem;}
+    @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
   }
   &__socials-list {
     display: flex;
@@ -16,37 +41,30 @@
     list-style: none;
   }
   &__socials-item {
-    width: 3rem;
-    height: 3rem;
-    margin: 0 .5rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0 0.8rem;
+    // @media (min-width: $tablet-min) {width: 2.4rem; height: 2.4rem;}
+    @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
     a {
       font-size: 0;
       line-height: 0;
-      &::before {
-        content: '';
-        display: block;
-        width: 3rem;
-        height: 3rem;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 3rem;
-      }
-    }
-    &:nth-child(1) a::before {
-      background-image: url('../img/vk.svg');
-    }
-    &:nth-child(2) a::before {
-      background-image: url('../img/instagram.svg');
-    }
-    &:nth-child(3) a::before {
-      background-image: url('../img/whatsapp.svg');
+      &:hover .top-header__social-icon {fill: $dark-green;}
     }
   }
   &__callme-link {
     width: 16ch;
-    height: 3rem;
+    height: 2.5rem;
+    padding: 0;
     color: white;
-    background-color: $blue4;
+    background-color: $green;
     border-radius: 1.5rem;
+    animation-name: wiggle;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    &:hover {animation: none;}
+    @media (min-width: $laptop-min) {height: 3rem;}
   }
 }
