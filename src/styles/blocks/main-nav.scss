@@ -43,6 +43,7 @@
     height: 3.6rem;
     padding: 0 2rem;
     border-bottom: 1px solid green;
+    &--active .link--underline::after {width: 100%;}
     &:nth-child(1) {
       border-top: 1px solid $green;
       @media (min-width: $laptop-min) {border-top: none;}
