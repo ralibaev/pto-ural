@@ -1,0 +1,3 @@
+Sitemap: https://riadent.ru/sitemap.xml
+User-agent: *
+Disallow: /send.php
