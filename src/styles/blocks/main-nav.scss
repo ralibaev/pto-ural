@@ -8,6 +8,7 @@
     width: 100vw;
     background-color: black;
     transition: all .3s ease;
+    z-index: 100;
     @media (min-width: 420px) {max-width: 320px;}
     @media (max-width: $tablet-max) {display: none;}
     @media (min-width: $tablet-min) {

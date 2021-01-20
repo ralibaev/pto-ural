@@ -13,18 +13,18 @@ header.page-header
           span г.Уфа, ул.Пархоменко 156/1 офис 317,
           span Понедельник - пятница С 9<sup>00</sup> до 18<sup>00</sup>
       .top-header__socials-blocks
-        ul.top-header__socials-list
-          li.top-header__socials-item
+        ul.socials__list
+          li.socials__item
             a(href="#" target="_blank") Вконтакте
-              svg.top-header__social-icon(width="30" height="30")
+              svg.socials__icon(width="30" height="30")
                 use(xlink:href="img/sprite.svg#vk")
-          li.top-header__socials-item
+          li.socials__item
             a(href="#" target="_blank") Инстаграм
-              svg.top-header__social-icon(width="30" height="30")
+              svg.socials__icon(width="30" height="30")
                 use(xlink:href="img/sprite.svg#instagram")
-          li.top-header__socials-item
-            a(href="https://wa.me/79373171329?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20услугу" target="_blank") Whatsapp
-              svg.top-header__social-icon(width="30" height="30")
+          li.socials__item
+            a(href="https://wa.me/79373171329" target="_blank") Whatsapp
+              svg.socials__icon(width="30" height="30")
                 use(xlink:href="img/sprite.svg#whatsapp")
       .top-header__callme-block
         button.link--callme.top-header__callme-link Обратный звонок
@@ -32,7 +32,7 @@ header.page-header
     .container.bottom-header__container
       .bottom-header__logo
         a.bottom-header__logo-link(href="/")
-          svg.svg-logo(version="1.1" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg" width="200" height="50")
+          svg.svg-logo.svg-logo--header(version="1.1" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg" width="200" height="50")
             defs
               linearGradient(id="logo-gradient")
                 stop(offset="-100%" stop-color="#F0FB00")
@@ -49,8 +49,8 @@ header.page-header
                   a.link--underline(href="#")= val
         button.main-nav__toggle(type="button")
           span Меню
-      .bottom-header__phones-block
-        a.link--underline.bottom-header__phone-link(href="tel:+79373171329") +7(937)317-13-29
-        a.link--underline.bottom-header__phone-link(href="tel:+79373092525") +7(937)309-25-25
-        svg.bottom-header__phone-icon(width="30" height="30")
-          use.bottom-header__phone-use(xlink:href="img/sprite.svg#phone")
+      .phones__block
+        a.link--underline.phones__link(href="tel:+79373171329") +7(937)317-13-29
+        a.link--underline.phones__link(href="tel:+79373092525") +7(937)309-25-25
+        svg.phones__icon(width="30" height="30")
+          use.phones__use.phones__use--header(xlink:href="img/sprite.svg#phone")

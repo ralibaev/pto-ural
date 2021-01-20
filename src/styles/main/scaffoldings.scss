@@ -81,7 +81,12 @@ a {
 		}
   }
 	&--callme {
+		height: 2.5rem;
+    padding: 0;
+    color: white;
+    background-color: $green;
 		border: 2px solid $green;
+		border-radius: 1.5rem;
 		cursor: pointer;
 		&:hover {
 			background-color: white;
@@ -90,20 +95,19 @@ a {
 		}
 	}
 }
-.page-main section:nth-of-type(2n - 1) {
-	background-color: $gray;
-}
+// .page-main section:nth-of-type(2n - 1) {
+// 	background-color: $gray;
+// }
 .svg-logo {
 	width: 140px;
 	height: 3.5rem;
 	@media (min-width: $tablet-min) {width: 160px; height: 4rem;}
 	@media (min-width: $laptop-min) {width: 200px; height: 5rem;}
-	@media (max-width: 1199px) and (min-width: $laptop-min) {
-		width: 60px;
-	}
-	&__name {
-		display: block;
-		@media (max-width: 1199px) and (min-width: $laptop-min) {display: none;}
+	&--header {
+		@media (max-width: 1199px) and (min-width: $laptop-min) {width: 60px;}
+		.svg-logo__name {
+			@media (max-width: 1199px) and (min-width: $laptop-min) {display: none;}
+		}
 	}
 }
 @keyframes from-top {

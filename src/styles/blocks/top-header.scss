@@ -1,7 +1,8 @@
 .top-header {
-  display: none;
+  height: 8rem;
   background-color: $gray;
-  @media (min-width: $laptop-min) {display: block; height: 5rem;}
+  @media (min-width: $laptop-min) {height: 5rem;}
+  @media (min-width: $tablet-min) {height: 6rem;}
   &__container {
     display: flex;
     justify-content: space-around;
@@ -9,10 +10,12 @@
     flex-wrap: wrap;
     height: 100%;
   }
-  &__mail, &__socials-blocks, &__callme-block, &__work-time {
+  &__mail, &__work-time, &__socials-blocks, &__callme-block {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    @media (min-width: $tablet-min) {width: auto;}
   }
   &__mail-link, &__work-time {
     display: flex;
@@ -27,38 +30,14 @@
     .top-header__mail-svg {fill: $dark-green;}
     span {color: $dark-green;}
   }
-  &__mail-svg, &__work-svg, &__social-icon {
+  &__mail-svg, &__work-svg {
     width: 2.4rem;
     height: 2.4rem;
     fill: $green;
-    // @media (min-width: $tablet-min) {width: 2.4rem; height: 2.4rem;}
     @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
-  }
-  &__socials-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  &__socials-item {
-    width: 2.4rem;
-    height: 2.4rem;
-    margin: 0 0.8rem;
-    // @media (min-width: $tablet-min) {width: 2.4rem; height: 2.4rem;}
-    @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
-    a {
-      font-size: 0;
-      line-height: 0;
-      &:hover .top-header__social-icon {fill: $dark-green;}
-    }
   }
   &__callme-link {
     width: 16ch;
-    height: 2.5rem;
-    padding: 0;
-    color: white;
-    background-color: $green;
-    border-radius: 1.5rem;
     animation-name: wiggle;
     animation-duration: 10s;
     animation-timing-function: linear;

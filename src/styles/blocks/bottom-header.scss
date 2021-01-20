@@ -1,5 +1,4 @@
 .bottom-header {
-  order: 0;
   height: 4rem;
   background-color: black;
   @media (min-width: $tablet-min) {height: 5rem;}
@@ -13,33 +12,9 @@
   &__logo {
     line-height: 0;
   }
-  &__logo-img {
-    height: 50px;
-  }
   &__nav {
     max-width: 720px;
     margin: 0;
     @media (min-width: $laptop-min) {flex-grow: 1; margin: 0 2rem;}
-  }
-  &__phones-block {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    padding: 0.5rem 0 0.5rem 3.5rem;
-    box-sizing: border-box;
-    @media (min-width: $laptop-min) {display: flex;}
-  }
-  &__phone-link {
-    color: greenyellow;
-    &::after {
-      background-color: greenyellow;
-    }
-  }
-  &__phone-icon {
-    position: absolute;
-    left: 0;
-    fill: greenyellow;
   }
 }

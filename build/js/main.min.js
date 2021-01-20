@@ -245,7 +245,7 @@ window.addEventListener('resize', function(event){
   resizeNavMenu();
 });
 
-// Изменение иконки телефона
+// Старое Изменение иконки телефона
 let headerPhoneLink = document.querySelectorAll('.bottom-header__phone-link');
 let headerPhoneUse = document.querySelector('.bottom-header__phone-use');
 headerPhoneLink.forEach((item, i) => {
@@ -256,6 +256,44 @@ headerPhoneLink.forEach((item, i) => {
     headerPhoneUse.setAttribute('xlink:href', 'img/sprite.svg#phone');
   });
 });
+
+// Попытка Изменения иконки телефона
+// let phoneBlock = document.querySelectorAll('.phones__block');
+// let phoneLink = [];
+// let phoneUse = [];
+// for (var i=0; i<phoneBlock.length; i++) {
+//   phoneLink[i] = phoneBlock[i].querySelectorAll('.phones__link');
+//   phoneUse[i] = phoneBlock[i].querySelector('.phones__use');
+// }
+// console.log(phoneBlock);
+// console.log(phoneLink);
+// console.log(phoneUse);
+// // phoneBlock.forEach((item, i) => {
+// //   let phoneLink[i] = item.querySelectorAll('.phones__link');
+// //   let phoneUse[i] = item.querySelector('.phones__use');
+// // });
+// for (var i=0; i<phoneBlock.length; i++) {
+//   // console.log(phoneUse[i]);
+//   // console.log(phoneLink[i][0]);
+//   // console.log(phoneLink[i][1]);
+//   for (var j=0; j<phoneLink[i].length; j++) {
+//     phoneLink[i][j].addEventListener('mouseover', function() {
+//       console.log(phoneUse[i]);
+//       phoneUse[i].setAttribute('xlink:href', 'img/sprite.svg#phone-ringing');
+//     });
+//     phoneLink[i][j].addEventListener('mouseout', function() {
+//       phoneUse[i].setAttribute('xlink:href', 'img/sprite.svg#phone');
+//     });
+//   }
+//   // phoneLink[i].forEach((item, j) => {
+//   //   item.addEventListener('mouseover', function() {
+//   //     phoneUse[i].setAttribute('xlink:href', 'img/sprite.svg#phone-ringing');
+//   //   });
+//   //   item.addEventListener('mouseout', function() {
+//   //     phoneUse[i].setAttribute('xlink:href', 'img/sprite.svg#phone');
+//   //   });
+//   // });
+// }
 
 // Изменение размера лого
 let svgLogo = document.querySelector('.svg-logo');
