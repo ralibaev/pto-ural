@@ -1,7 +1,6 @@
 {
   "name": "pto-ural",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,5 +35,14 @@
     "ios >= 7",
     "android >= 4",
     "bb >= 10"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralibaev/pto-ural.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ralibaev/pto-ural/issues"
+  },
+  "homepage": "https://github.com/ralibaev/pto-ural#readme",
+  "description": ""
 }

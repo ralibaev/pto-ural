@@ -1,26 +1,36 @@
 .top-header {
-  height: 8rem;
   background-color: $gray;
   @media (min-width: $laptop-min) {height: 5rem;}
   @media (min-width: $tablet-min) {height: 6rem;}
   &__container {
     display: flex;
+    // flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
+    padding: 10px 0;
   }
   &__mail, &__work-time, &__socials-blocks, &__callme-block {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    // width: 50%;
     @media (min-width: $tablet-min) {width: auto;}
   }
+  &__mail {display: none;}
   &__mail-link, &__work-time {
     display: flex;
     align-items: center;
-    span {padding-left: 0.5rem; color: $green;}
+    span {
+      color: $green;
+      @media (min-width: $laptop-min) {padding-left: 0.5rem;}
+    }
+  }
+  &__work-time {
+    width: 100%;
+    margin-bottom: 10px;
+    @media (min-width: $tablet-min) {width: auto;}
   }
   &__work-info {
     display: flex;
@@ -36,14 +46,15 @@
     fill: $green;
     @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
   }
+  &__work-svg {display: none;}
   &__callme-link {
-    width: 16ch;
+    width: 14ch;
     animation-name: wiggle;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
     &:hover {animation: none;}
-    @media (min-width: $laptop-min) {height: 3rem;}
+    @media (min-width: $laptop-min) {width: 16ch; height: 3rem;}
   }
 }
