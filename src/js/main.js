@@ -296,18 +296,18 @@ headerPhoneLink.forEach((item, i) => {
 // }
 
 // Изменение размера лого
-let svgLogo = document.querySelector('.svg-logo');
-function setViewboxSvgLogo() {
-  if ((document.documentElement.clientWidth < 1200) && (document.documentElement.clientWidth >= 1024)) {
-    svgLogo.setAttribute('viewBox', '0 0 200 180');
-  } else {
-    svgLogo.setAttribute('viewBox', '0 0 720 180');
-  }
-};
-setViewboxSvgLogo();
-window.addEventListener('resize', function(event){
-  setViewboxSvgLogo();
-});
+// let svgLogo = document.querySelector('.svg-logo');
+// function setViewboxSvgLogo() {
+//   if ((document.documentElement.clientWidth < 1200) && (document.documentElement.clientWidth >= 1024)) {
+//     svgLogo.setAttribute('viewBox', '0 0 200 180');
+//   } else {
+//     svgLogo.setAttribute('viewBox', '0 0 720 180');
+//   }
+// };
+// setViewboxSvgLogo();
+// window.addEventListener('resize', function(event){
+//   setViewboxSvgLogo();
+// });
 
 // Переливание лого
 let logoGradient = document.querySelector('#logo-gradient');

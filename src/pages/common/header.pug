@@ -32,14 +32,36 @@ header.page-header
     .container.bottom-header__container
       .bottom-header__logo
         a.bottom-header__logo-link(href="/")
-          svg.svg-logo.svg-logo--header(version="1.1" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg" width="200" height="50")
-            defs
-              linearGradient(id="logo-gradient")
-                stop(offset="-100%" stop-color="#F0FB00")
-                stop(offset="0%" stop-color="#11AD00")
-                stop(offset="100%" stop-color="#F0FB00")
-            path.svg-logo__logo(d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#logo-gradient)")
-            text.svg-logo__name(x="450" y="120" font-size="100" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#logo-gradient)") ООО УРАЛ
+          //- svg.svg-logo.svg-logo--header(version="1.1" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg" width="200" height="50")
+          //-   defs
+          //-     linearGradient(id="logo-gradient")
+          //-       stop(offset="-100%" stop-color="#F0FB00")
+          //-       stop(offset="0%" stop-color="#11AD00")
+          //-       stop(offset="100%" stop-color="#F0FB00")
+          //-   path.svg-logo__logo(d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#logo-gradient)")
+          //-   text.svg-logo__name(x="450" y="120" font-size="100" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#logo-gradient)") ООО УРАЛ
+          //- <svg class="svg-logo" version="1.1" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg">
+          //-   <defs>
+          //-     <linearGradient id="Gradient1">
+          //-       <stop offset="0%" stop-color="#11AD00"/>
+          //-       <stop offset="100%" stop-color="#F0FB00"/>
+          //-     </linearGradient>
+          //-   </defs>
+          //-   <path class="svg-logo__logo" d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#Gradient1)"/>
+          //-   <text class="svg-logo__name" x="430" y="110" font-size="150" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#Gradient1)">УРАЛ</text>
+          //-   <text x="430" y="170" font-size="70" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#Gradient1)">инжиниринг</text>
+          //- </svg>
+          <svg class="svg-logo" version="1.1" viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="Gradient1">
+                <stop offset="0%" stop-color="#11AD00"/>
+                <stop offset="100%" stop-color="#F0FB00"/>
+              </linearGradient>
+            </defs>
+            <path class="svg-logo__logo" d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#Gradient1)"/>
+            <text class="svg-logo__name" x="480" y="150" font-size="200" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#Gradient1)">УРАЛ</text>
+            <text x="375" y="235" font-size="60" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#Gradient1)">Инжиниринговая компания</text>
+          </svg>
       .bottom-header__nav
         nav.main-nav
           .main-nav__main-menu
