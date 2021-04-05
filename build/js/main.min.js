@@ -310,28 +310,28 @@ headerPhoneLink.forEach((item, i) => {
 // });
 
 // Переливание лого
-let logoGradient = document.querySelector('#logo-gradient');
-let gradientTimer;
-svgLogo.addEventListener('mouseover', function() {
-  gradientTimer = setInterval(function() {
-    for (let i = 0; i < logoGradient.childNodes.length; i++) {
-      if (logoGradient.childNodes[1].getAttribute('offset') == '100%') {
-        let switchAttribute = logoGradient.childNodes[1].getAttribute('stop-color');
-        logoGradient.lastChild.setAttribute('stop-color', switchAttribute);
-        logoGradient.lastChild.setAttribute('offset', '-100%');
-        logoGradient.prepend(logoGradient.lastChild);
-      }
-      let attribute = logoGradient.childNodes[i].getAttribute('offset');
-      attribute.substring(0, attribute.length - 1);
-      let numAttribute = parseInt(attribute) + 1;
-      attribute = numAttribute + '%';
-      logoGradient.childNodes[i].setAttribute('offset', attribute);
-    };
-  }, 20);
-});
-svgLogo.addEventListener('mouseout', function() {
-  clearInterval(gradientTimer);
-});
+// let logoGradient = document.querySelector('#logo-gradient');
+// let gradientTimer;
+// svgLogo.addEventListener('mouseover', function() {
+//   gradientTimer = setInterval(function() {
+//     for (let i = 0; i < logoGradient.childNodes.length; i++) {
+//       if (logoGradient.childNodes[1].getAttribute('offset') == '100%') {
+//         let switchAttribute = logoGradient.childNodes[1].getAttribute('stop-color');
+//         logoGradient.lastChild.setAttribute('stop-color', switchAttribute);
+//         logoGradient.lastChild.setAttribute('offset', '-100%');
+//         logoGradient.prepend(logoGradient.lastChild);
+//       }
+//       let attribute = logoGradient.childNodes[i].getAttribute('offset');
+//       attribute.substring(0, attribute.length - 1);
+//       let numAttribute = parseInt(attribute) + 1;
+//       attribute = numAttribute + '%';
+//       logoGradient.childNodes[i].setAttribute('offset', attribute);
+//     };
+//   }, 20);
+// });
+// svgLogo.addEventListener('mouseout', function() {
+//   clearInterval(gradientTimer);
+// });
 
 // Появление меню
 let navToggle = document.querySelector('.main-nav__toggle');

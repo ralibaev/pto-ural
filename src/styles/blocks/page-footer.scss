@@ -33,7 +33,9 @@
   &__nav-item {
     a {color: greenyellow;}
   }
-  &__callme-link {width: 14ch;}
+  &__callme-link {
+    width: 180px;
+  }
   &__mail {margin: 1rem 0;}
   &__mail-link {
     display: flex;
