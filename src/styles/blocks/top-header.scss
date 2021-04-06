@@ -29,7 +29,7 @@
     align-items: center;
     span {
       color: $green;
-      @media (min-width: $laptop-min) {padding-left: 0.5rem;}
+      @media (min-width: $tablet-min) {padding-left: 0.5rem;}
     }
   }
   &__work-time {
@@ -54,8 +54,10 @@
     fill: $green;
     @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
   }
-  &__work-svg {display: none;}
-  &__socials-blocks {display: none;}
+  &__work-svg {
+    display: none;
+    @media (min-width: $tablet-min) {display: block;}
+  }
   &__callme-link {
     width: 160px;
     animation-name: wiggle;
