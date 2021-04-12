@@ -9,6 +9,7 @@ html(lang="ru")
       link(rel="stylesheet" href="css/style.css")
       link(rel="preload" href="fonts/OpenSans-Regular.woff" as="font" type="font/woff2" crossorigin)
       link(rel="preload" href="fonts/OpenSans-Bold.woff" as="font" type="font/woff2" crossorigin)
+      script(src="js/svgxuse.js")
   body
     block header
       include header
@@ -17,3 +18,4 @@ html(lang="ru")
       include footer
     block scripts
       script(src="js/main.min.js")
+      script(src="js/svgxuse.js" defer)
