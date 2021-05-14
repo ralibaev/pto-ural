@@ -1,14 +1,18 @@
 $services = [
   [
     'name' => 'Исполнительная документация',
-    'link' => '/services/ispolnitelnaya-documentaciya/'
+    'link' => '/ispolnitelnaya-documentaciya/'
   ],
   [
     'name' => 'Проект производства работ',
-    'link' => '/services/proek-proizvodstva-rabot/'
+    'link' => '/proek-proizvodstva-rabot/'
   ],
   [
-    'name' => 'Аутсорсинг ПТО / СКК',
-    'link' => '/services/pto-skk/'
+    'name' => 'Аутсорсинг ПТО',
+    'link' => '/autsorsing-pto/'
   ],
+  [
+    'name' => 'Аутсорсинг СКК',
+    'link' => '/autsorsing-skk/'
+  ]
 ];
