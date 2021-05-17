@@ -1,0 +1,9 @@
+section.request
+  .container.request__container
+    h2.request__title Получите консультацию специалиста
+    form(action="send.php" method="POST")
+      label(for="name") Имя
+      input(type="text" id="name" name="user_name")
+      label(for="phone") Телефон
+      input(type="text" id="phone" name="user_phone")
+      button(type="submit") Отправить форму

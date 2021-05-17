@@ -1,0 +1,17 @@
+section.services
+  .container.services__container
+    h2.visually-hidden.services__title Наши услуги
+    ul.services__list
+      li.services__item
+        h3.services__name Исполнительная документация
+        ul.services__text-list
+          each val in ['Акты входного контроля', 'Акты скрытых работ', 'Исполнительные схемы', 'Акты ответственных конструкций', 'Ведомости', 'Общий журнал работ', 'Специальные журналы']
+            li.services__text-item= val
+      li.services__item
+        h3.services__name Разработка ППР
+        ul.services__text-list
+          each val in ['Пояснительная записка', 'Календарный план или график производства работ по объекту', 'Строительный генеральный план', 'Технологические карты на выполнение отдельных видов работ', 'Схемы размещения геодезических знаков']
+            li.services__text-item= val
+      li.services__item
+        h3.services__name Аутсорсинг ПТО / СКК
+        p.services__text Предоставление инженеров ПТО / СКК на объект строительства

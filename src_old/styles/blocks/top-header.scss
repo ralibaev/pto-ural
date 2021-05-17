@@ -1,0 +1,71 @@
+.top-header {
+  background-color: $gray;
+  @media (min-width: $tablet-min) {height: 5rem;}
+  @media (min-width: $laptop-min) {height: 6rem;}
+  &__container {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    @media (min-width: $tablet-min) {padding: 0;}
+  }
+  &__mail, &__work-time, &__socials-blocks, &__callme-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 50%;
+    @media (min-width: $tablet-min) {width: auto;}
+  }
+  &__mail {
+    display: none;
+    @media (min-width: $tablet-min) {display: block;}
+  }
+  &__mail-link, &__work-time {
+    display: flex;
+    align-items: center;
+    span {
+      color: $green;
+      @media (min-width: $tablet-min) {padding-left: 0.5rem;}
+    }
+  }
+  &__work-time {
+    width: 100%;
+    margin-bottom: 10px;
+    @media (min-width: $tablet-min) {width: auto; margin-bottom: 0;}
+  }
+  &__work-info {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 340px) {
+      span {font-size: 14px;}
+    }
+  }
+  &__mail-link:hover {
+    .top-header__mail-svg {fill: $dark-green;}
+    span {color: $dark-green;}
+  }
+  &__mail-svg, &__work-svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $green;
+    @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
+  }
+  &__work-svg {
+    display: none;
+    @media (min-width: $tablet-min) {display: block;}
+  }
+  &__callme-link {
+    width: 160px;
+    animation-name: wiggle;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    &:hover {animation: none;}
+    @media (min-width: $laptop-min) {width: 180px; height: 4rem;}
+  }
+}

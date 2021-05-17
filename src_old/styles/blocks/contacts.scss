@@ -1,0 +1,24 @@
+.contacts {
+  padding: 20px 0;
+  @media (min-width: $tablet-min) {padding: 30px 0;}
+  @media (min-width: $laptop-min) {padding: 50px 0;}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $tablet-min) {flex-direction: row; justify-content: space-between;}
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 280px;
+    @media (min-width: $tablet-min) {margin-right: 30px;}
+    @media (min-width: $laptop-min) {min-width: 320px;}
+    p, a {color: $green;}
+    a {&:hover {color: $dark-green;}}
+  }
+  &__callme-link {width: 16ch;}
+  &__map-block {width: 100%;}
+}

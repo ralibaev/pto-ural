@@ -1,0 +1,26 @@
+.socials {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0 0.8rem;
+    @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
+    a {
+      font-size: 0;
+      line-height: 0;
+      &:hover .socials__icon {fill: $dark-green;}
+    }
+  }
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $green;
+    @media (min-width: $laptop-min) {width: 3rem; height: 3rem;}
+  }
+}

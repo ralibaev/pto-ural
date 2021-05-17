@@ -35,7 +35,7 @@ img {
 	}
 }
 body, p, span, ol, ul {
-	font-family: 'Open Sans';
+	font-family: 'Gilroy';
 	font-weight: normal;
 	font-size: 1.6rem;
 	@media (min-width: $laptop-min) {font-size: 1.8rem;}
@@ -95,9 +95,6 @@ a {
 		}
 	}
 }
-// .page-main section:nth-of-type(2n - 1) {
-// 	background-color: $gray;
-// }
 .svg-logo {
 	width: 140px;
 	height: 3.5rem;

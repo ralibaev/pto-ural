@@ -1,0 +1,9 @@
+.main-slider {
+  height: 600px;
+  background-color: #eeeeee;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
