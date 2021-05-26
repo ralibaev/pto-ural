@@ -1,27 +1,2 @@
 .bottom-header {
-  height: 4rem;
-  background-color: black;
-  @media (min-width: $tablet-min) {height: 5rem;}
-  @media (min-width: $laptop-min) {height: 6rem;}
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  &__logo {
-    line-height: 0;
-  }
-  &__nav {
-    max-width: 720px;
-    margin: 0;
-    @media (min-width: $laptop-min) {flex-grow: 1; margin: 0 2rem;}
-  }
-  &__whatsapp {
-    a {
-      font-size: 0;
-      line-height: 0;
-      &:hover svg {fill: $dark-green;}
-    }
-  }
 }
