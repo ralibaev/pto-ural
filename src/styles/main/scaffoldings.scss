@@ -38,7 +38,6 @@ body, p, span, ol, ul {
 	font-family: 'Gilroy';
 	font-weight: normal;
 	font-size: 1.6rem;
-	@media (min-width: $laptop-min) {font-size: 1.8rem;}
 }
 h1, h2 {
 	font-size: 2rem;
@@ -98,14 +97,6 @@ a {
 .svg-logo {
 	width: 140px;
 	height: 3.5rem;
-	@media (min-width: $tablet-min) {width: 160px; height: 4rem;}
-	@media (min-width: $laptop-min) {width: 200px; height: 5rem;}
-	&--header {
-		@media (max-width: 1199px) and (min-width: $laptop-min) {width: 60px;}
-		.svg-logo__name {
-			@media (max-width: 1199px) and (min-width: $laptop-min) {display: none;}
-		}
-	}
 }
 @keyframes from-top {
 	0% {transform: translateY(-2000px);}

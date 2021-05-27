@@ -1,6 +1,13 @@
 .top-header {
+  height: 130px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(black, black 80%, white 100%);
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
   }
 }
