@@ -10,5 +10,7 @@
     align-items: center;
     height: 100%;
   }
-  &__adress-svg {fill: yellow;}
+  svg {
+    fill: $yellow;
+  }
 }
