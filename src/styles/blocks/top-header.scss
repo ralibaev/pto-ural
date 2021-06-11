@@ -1,6 +1,6 @@
 .top-header {
   height: 130px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: white;
   background: linear-gradient(black, black 80%, white 100%);
@@ -10,7 +10,47 @@
     align-items: center;
     height: 100%;
   }
-  svg {
-    fill: $yellow;
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 70px;
+    svg {
+      padding-right: 10px;
+      fill: $yellow;
+    }
+  }
+  &__adress-block, &__work-block, &__mail-block, &__phone-block {
+    display: flex;
+    align-items: center;
+    a {color: white;}
+  }
+  &__work-block {
+    span {text-align: right;}
+    b {font-weight: 500; font-size: 2rem;}
+  }
+  &__phone-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__whatsapp {
+    font-size: 0;
+    line-height: 0;
+    svg {
+      fill: $yellow;
+    }
+  }
+  &__callme-button {
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    border: 5px solid $yellow;
+    border-image: linear-gradient(to right, $yellow, $green);
+    border-image-slice: 1;
+    background-color: transparent;
+    cursor: pointer;
+    animation: wiggle 7s 3s infinite;
   }
 }

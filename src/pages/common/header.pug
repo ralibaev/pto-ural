@@ -22,22 +22,22 @@ header.page-header
         .top-header__work-block
           svg.top-header__work-svg(width="28" height="28")
             use(xlink:href="img/sprite.svg#time")
-          span Понедельник - пятница
-          span с 9:00 до 18:00
+          span Понедельник - пятница<br> <b>с 9:00 до 18:00</b>
       .top-header__info-block
         .top-header__mail-block
           svg.top-header__mail-svg(width="28" height="18")
             use(xlink:href="img/sprite.svg#mail")
-          a info@pto-ural.ru
+          a(href="mailto:info@pto-ural.ru") info@pto-ural.ru
         .top-header__phone-block
           svg.top-header__mail-svg(width="18" height="28")
             use(xlink:href="img/sprite.svg#phone")
-          a +7(937)317-13-29
-          a +7(937)309-25-25
+          .top-header__phone-links
+            a(href="tel:+79373171329") +7(937)317-13-29
+            a(href="tel:+79373092525") +7(937)309-25-25
       .top-header__whatsapp-block
-        a.top-header__whatsapp Whatsapp
-        svg.top-header__mail-svg(width="60" height="59")
-          use(xlink:href="img/sprite.svg#whatsapp")
+        a.top-header__whatsapp(href="#") Whatsapp
+          svg.top-header__mail-svg(width="60" height="59")
+            use(xlink:href="img/sprite.svg#whatsapp")
       .top-header__callme-block
         button.top-header__callme-button Обратный звонок
   .bottom-header
@@ -47,14 +47,14 @@ header.page-header
           .main-nav__main-menu
             ul.main-nav__list
               li.main-nav__item
-                a.link--underline(href="#") О компании
+                a(href="#" data-content="О компании") О компании
               li.main-nav__item
-                a.link--underline(href="#") Исполнительная документация
+                a(href="#" data-content="Исполнительная документация") Исполнительная документация
               li.main-nav__item
-                a.link--underline(href="#") Проект производства работ
+                a(href="#" data-content="ППР") ППР
               li.main-nav__item
-                a.link--underline(href="#") Аутсорсинг ПТО/СКК
+                a(href="#" data-content="ПТО/СКК") ПТО/СКК
               li.main-nav__item
-                a.link--underline(href="#") Контакты
+                a(href="#" data-content="Контакты") Контакты
         button.main-nav__toggle(type="button")
           span Меню
