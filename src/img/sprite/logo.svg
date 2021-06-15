@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 180">
+  <defs>
+    <linearGradient id="logo-gradient">
+      <stop offset="0%"  stop-color="#11AD00" />
+      <stop offset="100%" stop-color="#F0FB00" />
+    </linearGradient>
+  </defs>
+  <path d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#logo-gradient)" />
+</svg>
