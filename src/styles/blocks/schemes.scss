@@ -9,7 +9,7 @@
       display: block;
       width: calc(50vw + 190px);
       height: 50%;
-      background: linear-gradient(to right, $yellow, $green);
+      background: linear-gradient(to left, $yellow, $green);
       z-index: -5;
     }
     span {
@@ -35,12 +35,13 @@
     align-items: baseline;
     margin: 0;
     padding: 0;
+    margin-left: 200px;
     list-style: none;
   }
   &__option-item {
     position: relative;
     margin: 50px 0;
-    padding-left: 50px;
+    padding-left: 80px;
     font-size: 24px;
     svg {
       position: absolute;

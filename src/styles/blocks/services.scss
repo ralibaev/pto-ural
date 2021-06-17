@@ -1,5 +1,18 @@
 .services {
   padding: 50px 0;
+  &__title {
+    text-align: center;
+    span {
+      position: relative;
+      display: inline;
+      font-size: 84px;
+    }
+    svg {
+      position: absolute;
+      left: -100px;
+    }
+  }
+  p {margin-bottom: 50px; font-size: 24px;}
   &__list {
     display: flex;
     justify-content: center;
