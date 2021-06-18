@@ -3,21 +3,31 @@ footer.page-footer
     .page-footer__block
       .page-footer__logo
         a.page-footer__logo-link(href="/")
-          svg.svg-logo(version="1.1" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg" width="200" height="50")
-            defs
-              linearGradient(id="logo-gradient")
-                stop(offset="-100%" stop-color="#F0FB00")
-                stop(offset="0%" stop-color="#11AD00")
-                stop(offset="100%" stop-color="#F0FB00")
-            path.svg-logo__logo(d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#logo-gradient)")
-            text.svg-logo__name(x="450" y="120" font-size="100" font-family="Times New Roman, Arial, sans-serif" font-weight="bold" text-anchor="middle" fill="url(#logo-gradient)") ООО УРАЛ
-      .page-footer__adress-block
-        a(href="#")
-          span г.Уфа, ул.Пархоменко 156/1, офис 317
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 215.43 70.41" width="216" height="71">
+            <defs>
+              <linearGradient id="grad1" x1="-748.36" y1="-279.41" x2="-748.04" y2="-279.41" gradientTransform="translate(149672.5 50331.21) scale(200 180)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#11ad00"/><stop offset="1" stop-color="#f0fb00"/></linearGradient>
+            </defs>
+            <g id="Слой_2" data-name="Слой 2">
+              <g id="Слой_1-2" data-name="Слой 1">
+                <path style="fill:url(#grad1);" class="cls-1" d="M65.4,8.56,32.7,67.41,0,8.56H46.11L32.7,32.42l-4.91-8.5,3.94-6.85H14.38L32.7,49.77,55.59,8.56Z"/>
+                <text style="font-size:64px;fill:#f0fb00;font-family:Gilroy;font-weight:600;isolation:isolate;" class="cls-2" transform="translate(68.81 54.17)">УРАЛ</text>
+                <text style="font-size:12px;fill:#fff;font-family:Gilroy;font-weight:500;isolation:isolate;" class="cls-5" transform="translate(70.11 67.41)">Инжиниринговая компания</text>
+              </g>
+            </g>
+          </svg>
+      .page-footer__info-block
+        .page-footer__adress-block
+          svg.page-footer__adress-svg(width="28" height="34")
+            use(xlink:href="img/sprite.svg#adress")
+          span Уфа, ул.Пархоменко 156/1 офис 317
+        .page-footer__work-block
+          svg.page-footer__work-svg(width="28" height="28")
+            use(xlink:href="img/sprite.svg#time")
+          span Понедельник - пятница<br> <b>с 9:00 до 18:00</b>
     .page-footer__block
       nav.page-footer__nav
         ul.page-footer__nav-list
-          each val in ['О компании', 'Исполнительная документация', 'Проект производства работ', 'Аутсорсинг ПТО/СКК', 'Контакты']
+          each val in ['О компании', 'Исполнительная документация', 'ППР', 'ПТО/СКК', 'Контакты']
             li.page-footer__nav-item
               a.link--underline(href="#")= val
     .page-footer__block
