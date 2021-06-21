@@ -2,8 +2,12 @@ section.services
   .container.services__container
     h2.services__title
       span УРАЛ
-        svg(width="100" height="100")
-          use(xlink:href="img/sprite.svg#logo")
+        svg(viewBox="0 0 200 180" width="100" height="100")
+          defs
+            linearGradient(id="logo-gradient")
+              stop(offset="0%"  stop-color="#11AD00")
+              stop(offset="100%" stop-color="#F0FB00")
+          path(d="M200 0 L100 180 L0 0 L141 0 L100 73 L85 47 L97 26 L44 26 L100 126 L170 0 Z" fill="url(#logo-gradient)")
     p Специализация Инжиниринговой компании Урал - разработка исполнительной документации.
     .services__list
       .services__item
