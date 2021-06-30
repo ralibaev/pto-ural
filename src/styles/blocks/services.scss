@@ -40,7 +40,7 @@
       opacity: 0.25;
       z-index: 5;
     }
-    body.no-webp {
+    body.no-webp & {
       &:nth-child(1) {background-image: url('../img/services1.jpg');}
       &:nth-child(2) {background-image: url('../img/services2.jpg');}
       &:nth-child(3) {background-image: url('../img/services3.jpg');}
