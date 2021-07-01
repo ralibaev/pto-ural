@@ -44,5 +44,6 @@
     "url": "https://github.com/ralibaev/pto-ural/issues"
   },
   "homepage": "https://github.com/ralibaev/pto-ural#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {}
 }
