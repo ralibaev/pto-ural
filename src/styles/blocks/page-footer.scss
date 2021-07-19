@@ -1,50 +1,80 @@
 .page-footer {
+  margin: 5rem 0 0;
   padding: 2rem 0;
   background-color: black;
+  svg {
+    padding-right: 10px;
+    fill: $yellow;
+  }
   &__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (min-width: $tablet-min) {flex-direction: row; justify-content: space-between;}
-    @media (min-width: $laptop-min) {justify-content: space-around;}
+    justify-content: space-between;
   }
   &__block:nth-child(3) {
     display: flex;
-    @media (min-width: $tablet-min) {flex-direction: column;}
+    flex-direction: column;
+    align-items: flex-end;
   }
   &__logo {
-    display: grid;
-    place-items: center;
     line-height: 0;
+  }
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__adress-block, &__work-block, &__mail-block, &__phone-block {
+    display: flex;
+    align-items: center;
+    span, a {color: white;}
+  }
+  &__work-block {
+    span {text-align: center;}
+    b {font-weight: 500; font-size: 2.4rem;}
   }
   &__adress-block {
     margin: 2rem 0;
     a {color: greenyellow;}
   }
-  &__nav, &__mail {
-    display: none;
-    @media (min-width: $tablet-min) {display: block;}
-  }
   &__nav-list {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    padding: 0;
     list-style: none;
   }
   &__nav-item {
-    a {color: greenyellow;}
+    margin: 5px 0;
+    a {color: white;}
   }
-  &__callme-link {
-    width: 180px;
-  }
-  &__mail {margin: 1rem 0;}
-  &__mail-link {
+  &__callme-block {
     display: flex;
-    align-items: center;
-    span {padding-left: .5rem; color: $green;}
   }
-  &__mail-svg {
-    width: 2.4rem;
-    height: 2.4rem;
-    fill: $green;
+  &__mail-block {
+    margin: 20px 0;
+  }
+  &__whatsapp {
+    display: block;
+    width: 60px;
+    height: 59px;
+    margin-right: 60px;
+    font-size: 0;
+    line-height: 0;
+  }
+  &__callme-button {
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    border: 5px solid $yellow;
+    border-image: linear-gradient(to right, $yellow, $green);
+    border-image-slice: 1;
+    background-color: transparent;
+    cursor: pointer;
+    animation: wiggle 7s 3s infinite;
+  }
+  &__phone-links {
+    display: flex;
+    flex-direction: column;
   }
 }
