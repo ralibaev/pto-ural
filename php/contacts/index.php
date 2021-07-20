@@ -3,6 +3,7 @@
   <meta charset="UTF-8"><meta name="yandex-verification" content="4295dd9cb19f2a0f" /><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты инжиниринговой компании - Урал</title>
   <meta name="Description" content="👷 Разработаем и сдадим исполнительную документацию на объекте или удаленно, разработаем проект производства работ, проконтролируем строительство">
+  <link rel="canonical" href="https://pto-ural.ru/contacts/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/favicon.svg">
   <link rel="preload" href="/fonts/TTNormsPro-Regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/TTNormsPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
