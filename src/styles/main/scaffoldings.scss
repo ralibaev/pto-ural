@@ -98,6 +98,9 @@ a {
 	width: 140px;
 	height: 3.5rem;
 }
+.page-main {
+	background: url('../img/background.svg') left -1000px top 1000px/1188px 1296px no-repeat, url('../img/background.svg') right -700px top 1000px/1188px 1296px no-repeat, url('../img/background.svg') left 0 top 2100px/462px 504px no-repeat, url('../img/background.svg') right -700px top 2300px/1056px 1152px no-repeat, url('../img/background.svg') left -800px top 3100px/1188px 1296px no-repeat, url('../img/background.svg') right 0 top 4200px/462px 504px no-repeat, url('../img/background.svg') left 0 top 5000px/330px 360px no-repeat;
+}
 @keyframes from-top {
 	0% {transform: translateY(-2000px);}
 	70% {transform: translateY(30px);}
