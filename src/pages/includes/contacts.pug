@@ -1,30 +1,23 @@
 section.contacts
   .container.contacts__container
-    .contacts__info
-      p.contacts__adress г.Уфа, ул.Пархоменко 156/1, офис 317
-      p.contacts__work-time Понедельник - пятница с 9<sup>00</sup> до 18<sup>00</sup>
-      .phones__block
-        a.phones__link(href="tel:+79373171329") +7(937)317-13-29
-        a.phones__link(href="tel:+79373092525") +7(937)309-25-25
-        svg.phones__icon(width="30" height="30")
-          use.phones__use(xlink:href="img/sprite.svg#phone")
-      p.contacts__mail
-        a(href="mailto:info@pto-ural.ru") info@pto-ural.ru
-      .contacts__socials
-        ul.socials__list
-          li.socials__item
-            a(href="#" target="_blank") Вконтакте
-              svg.socials__icon(width="30" height="30")
-                use(xlink:href="img/sprite.svg#vk")
-          li.socials__item
-            a(href="#" target="_blank") Инстаграм
-              svg.socials__icon(width="30" height="30")
-                use(xlink:href="img/sprite.svg#instagram")
-          li.socials__item
-            a(href="https://wa.me/79373171329" target="_blank") Whatsapp
-              svg.socials__icon(width="30" height="30")
-                use(xlink:href="img/sprite.svg#whatsapp")
-      p.contacts__callme-block
-        button.link--callme.contacts__callme-link Обратный звонок
-    .contacts__map-block
-      iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A58fd9f95b8aab310cb15723a98804996da8ec090c65231914a9a73883dfa2512&amp;source=constructor" width="100%" height="320" frameborder="0")
+    h1.contacts__title Контакты
+    .contacts__inner
+      .contacts__info
+        a.contacts__whatsapp(href="https://wa.me/79373171329?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20услугу") Whatsapp
+          svg.contacts__whatsapp-svg(width="60" height="59")
+            use(xlink:href="img/sprite.svg#whatsapp")
+        a.contacts__mail(href="mailto:info@pto-ural.ru")
+          svg.contacts__mail-svg(width="28" height="18")
+            use(xlink:href="img/sprite.svg#mail")
+          span info@pto-ural.ru
+        .phones__block
+          a.phones__link.contacts__phones(href="tel:+79373171329") +7(937)317-13-29
+          a.phones__link.contacts__phones(href="tel:+79373092525") +7(937)309-25-25
+          svg.phones__icon(width="18" height="28")
+            use.phones__use(xlink:href="img/sprite.svg#phone")
+        p.contacts__adress г.Уфа, ул.Пархоменко 156/1, офис 317
+        p.contacts__work-time Понедельник - пятница с 9<sup>00</sup> до 18<sup>00</sup>
+        p.contacts__callme-block
+          button.contacts__callme-button Обратный звонок
+      .contacts__map-block
+        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A58fd9f95b8aab310cb15723a98804996da8ec090c65231914a9a73883dfa2512&amp;source=constructor" width="100%" height="320" frameborder="0")
