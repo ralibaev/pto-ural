@@ -15,9 +15,15 @@ section.contacts
           a.phones__link.contacts__phones(href="tel:+79373092525") +7(937)309-25-25
           svg.phones__icon(width="18" height="28")
             use.phones__use(xlink:href="img/sprite.svg#phone")
-        p.contacts__adress г.Уфа, ул.Пархоменко 156/1, офис 317
-        p.contacts__work-time Понедельник - пятница с 9<sup>00</sup> до 18<sup>00</sup>
+        .contacts__adress-block
+          svg.contacts__adress-svg(width="28" height="34")
+            use(xlink:href="img/sprite.svg#adress")
+          span Уфа, ул.Пархоменко 156/1 офис 317
+        .contacts__work-block
+          svg.top-header__work-svg(width="28" height="28")
+            use(xlink:href="img/sprite.svg#time")
+          span Понедельник - пятница<br> с 9:00 до 18:00
         p.contacts__callme-block
           button.contacts__callme-button Обратный звонок
       .contacts__map-block
-        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A58fd9f95b8aab310cb15723a98804996da8ec090c65231914a9a73883dfa2512&amp;source=constructor" width="100%" height="320" frameborder="0")
+        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A58fd9f95b8aab310cb15723a98804996da8ec090c65231914a9a73883dfa2512&amp;source=constructor" width="100%" height="400" frameborder="0")

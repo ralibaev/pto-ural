@@ -17,6 +17,6 @@
     display: flex;
     span {margin-left: 10px; color: black;}
   }
-  &__phones {color: black;}
+  &__phones.phones__link {color: black;}
   &__map-block {width: 100%;}
 }
