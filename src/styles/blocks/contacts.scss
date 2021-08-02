@@ -5,11 +5,14 @@
   &__info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   svg {
     fill: $green;
   }
   &__whatsapp {
+    width: 60px;
+    height: 60px;
     font-size: 0;
     line-height: 0;
   }
@@ -17,6 +20,26 @@
     display: flex;
     span {margin-left: 10px; color: black;}
   }
+  &__phones-block.phones__block {
+    height: auto;
+  }
   &__phones.phones__link {color: black;}
+  &__adress-block, &__work-block {
+    display: flex;
+    span {
+      margin-left: 10px;
+    }
+  }
+  &__adress-svg {min-width: 28px;}
+  &__callme-button {
+    width: 240px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    background-color: $green;
+    border: none;
+    border-radius: 5px;
+  }
   &__map-block {width: 100%;}
 }
