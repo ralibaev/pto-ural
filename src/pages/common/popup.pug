@@ -1,13 +1,13 @@
 .popup__layout
 .popup__form
   .popup__wrapper
-    h2.popup__title Получите професииональную консультацию
+    h2.popup__title Получите консультацию специалиста
     form(action="send.php" method="POST")
       input(type="hidden" name="fake_name")
       input(type="hidden" name="fake_phone")
-      label(for="name") Имя
-      input(type="text" id="name" name="user_name")
-      label(for="phone") Телефон
-      input(type="text" id="phone" name="user_phone")
+      label(for="name")
+      input.popup__real-input(type="text" id="name" name="user_name" placeholder="Имя")
+      label(for="phone")
+      input.popup__tel-input.popup__real-input.masked(type="text" id="phone" name="user_phone" pattern="\(\d{3}\) \d{3}\-\d{4}" title="10-digit number" placeholder="(XXX) XXX-XX-XX")
       button(type="submit") Отправить форму
-  .poup__close
+  .popup__close Закрыть

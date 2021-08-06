@@ -1,0 +1,104 @@
+.popup {
+  &__layout {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    &--show {display: block;}
+  }
+  &__form {
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    width: 420px;
+    padding: 40px;
+    margin-left: -230px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    box-shadow: 0 0 20px 50px rgba(0, 0, 0, 0.7);
+    z-index: 200;
+    &--show {display: block;}
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__title {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  &__real-input {
+    margin-bottom: 20px;
+  }
+  &__close {
+    position: absolute;
+    top: -5px;
+    right: -30px;
+    z-index: 200;
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    line-height: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 2px;
+      width: 22px;
+      height: 4px;
+      background: rgb(208, 208, 208);
+    }
+    &::before {transform: rotate(45deg);}
+    &::after {transform: rotate(-45deg);}
+  }
+}
+
+.shell {
+  position: relative;
+  line-height: 1;
+  span {
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  color: red;
+  pointer-events: none;
+  z-index: -1;
+    i { /* any of these 3 will work */
+        color: transparent;
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+}
+input.masked,
+.shell span {
+  font-size: 16px;
+  font-family: monospace;
+  padding-right: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.popup__form {
+  li {
+    // line-height: 2;
+    // font-family: helvetica;
+    // list-style-type: none;
+    // border-bottom: 1px solid #ccc;
+  }
+  label {
+    display: inline-block;
+    width: 14em;
+  }
+  // input {
+  //   border: none;
+  // }
+}
